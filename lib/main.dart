@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'login_page.dart';
+import 'get_stared_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Book TrackerFlutter ',
-        home: GetStared(),
+        home: const GetStared(),
         debugShowCheckedModeBanner: false,
         theme: ThemeData(primarySwatch: Colors.deepPurple));
   }
@@ -26,10 +25,10 @@ class GetStared extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: CircleAvatar(
-        backgroundColor: Color.fromARGB(255, 231, 243, 248),
+        backgroundColor: const Color.fromARGB(255, 231, 243, 248),
         child: Column(
           children: [
-            Spacer(),
+            const Spacer(),
             const Text('BookTracker',
                 style: TextStyle(
                     color: Color.fromARGB(255, 31, 31, 31),
@@ -40,24 +39,24 @@ class GetStared extends StatelessWidget {
                     color: Color.fromARGB(255, 107, 107, 107),
                     fontSize: 20,
                     fontWeight: FontWeight.w400)),
-            SizedBox(height: 50),
+            const SizedBox(height: 50),
             TextButton.icon(
                 style: TextButton.styleFrom(
                     primary: Colors.white,
-                    backgroundColor: Color.fromARGB(255, 248, 250, 117)),
+                    backgroundColor: const Color.fromARGB(255, 248, 250, 117)),
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => LoginPage()));
+                      MaterialPageRoute(builder: (context) => const LoginPage()));
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.login_rounded,
                   color: Colors.black,
                 ),
-                label: Text(
+                label: const Text(
                   'Sign in to get started',
                   style: TextStyle(color: Colors.black),
                 )),
-            Spacer(),
+            const Spacer(),
           ],
         ),
       ),

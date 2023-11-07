@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_book_tracker/widgets/input_decoration.dart';
+import 'package:flutter_book_tracker/widgets/login_form.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -40,44 +40,10 @@ class _LoginPageState extends State<LoginPage> {
                   width: 300,
                   height: 300,
                   child: isCreatedAccountClicked != true
-                      ? Form(
-                          key: _formkey,
-                          child: Column(
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(15.0),
-                                child: TextFormField(
-                                  controller: _emailTextController,
-                                  decoration: buildInputDecoration(
-                                    label:  "Enter email",hintText:  "abc@gmail.com"),
-                                ),
-                              ),
-                              Padding(   
-                                padding: const EdgeInsets.all(15.0),
-                                child: TextFormField(
-                                  controller: _passwordTextController,
-                                  obscureText: true,
-                                  decoration: buildInputDecoration(
-                                    label:  "Enter Password",hintText:  "......."),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 20,
-                              ),TextButton(
-                                onPressed: (){}, 
-                                style:TextButton.styleFrom(
-                                  padding: const EdgeInsets.all(15),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(4)
-                                ),
-                                backgroundColor: Colors.deepPurple,
-                                textStyle: const TextStyle(
-                                  fontSize: 16, 
-                                 )
-                                ) ,
-                                child: const Text('Sign In',style: TextStyle(color: Colors.white),))
-                            ],
-                          ))
+                      ? login_form(
+                        formkey: _formkey,
+                         emailTextController: _emailTextController,
+                          passwordTextController: _passwordTextController)
                       : Form(
                           child: TextFormField(),
                         )),
@@ -116,3 +82,4 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
+
