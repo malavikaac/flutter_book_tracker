@@ -42,7 +42,6 @@ class GetStared extends StatelessWidget {
             const SizedBox(height: 50),
             TextButton.icon(
                 style: TextButton.styleFrom(
-                    primary: Colors.white,
                     backgroundColor: const Color.fromARGB(255, 248, 250, 117)),
                 onPressed: () {
                   Navigator.push(context,
