@@ -26,7 +26,7 @@ class login_form extends StatelessWidget {
                   return value!.isEmpty ? 'Please add an email': null;
                 },
                 decoration: buildInputDecoration(
-                  label:  "Enter email",hintText:  "abcd@gmail.com"),
+                  label:  "Enter your email",hintText:  "abcd@gmail.com"),
               ),
             ),
             Padding(   
