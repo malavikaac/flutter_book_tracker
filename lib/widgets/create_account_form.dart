@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'input_decoration.dart';
 
-class login_form extends StatelessWidget {
-  const login_form({
+
+class Create_Account_Form extends StatelessWidget {
+  const Create_Account_Form({
     super.key,
     required GlobalKey<FormState> formkey,
     required TextEditingController emailTextController,
