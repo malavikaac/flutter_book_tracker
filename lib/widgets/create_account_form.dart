@@ -40,7 +40,7 @@ class Create_Account_Form extends StatelessWidget {
                 },
                 obscureText: true,
                 decoration: buildInputDecoration(
-                  label:  "Enter Password",hintText:  "......."),
+                  label:  "Enter Password",hintText:  "........."),
               ),
             ),
             const SizedBox(
