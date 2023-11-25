@@ -37,6 +37,7 @@ class GetStared extends StatelessWidget {
                 label: const Text(
                   'Sign in to get started',
                   style: TextStyle(color: Colors.black),
+                  
                 )),
             const Spacer(),
           ],
