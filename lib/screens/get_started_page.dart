@@ -26,7 +26,7 @@ class GetStared extends StatelessWidget {
             const SizedBox(height: 50),
             TextButton.icon(
                 style: TextButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 248, 250, 117)),
+                    backgroundColor: Color.fromARGB(255, 244, 247, 119)),
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => const LoginPage()));
