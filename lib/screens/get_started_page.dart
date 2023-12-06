@@ -15,7 +15,7 @@ class GetStared extends StatelessWidget {
             const Spacer(),
             const Text('BookTracker',
                 style: TextStyle(
-                    color: Color.fromARGB(255, 32, 31, 31),
+                    color: Color.fromARGB(255, 32, 32, 31),
                     fontSize: 30,
                     fontWeight: FontWeight.bold)),
             const Text('"Read ..Change .. Yourself"',
