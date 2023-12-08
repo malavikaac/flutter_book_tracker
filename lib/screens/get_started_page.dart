@@ -23,7 +23,7 @@ class GetStared extends StatelessWidget {
                     color: Color.fromARGB(255, 107, 107, 107),
                     fontSize: 20,
                     fontWeight: FontWeight.w400)),
-            const SizedBox(height: 55),
+            const SizedBox(height: 50),
             TextButton.icon(
                 style: TextButton.styleFrom(
                     backgroundColor: const Color.fromARGB(255, 244, 247, 119)),
