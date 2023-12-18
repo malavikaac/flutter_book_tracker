@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_book_tracker/utils/colors%20.dart';
+import 'package:flutter_book_tracker/src/utils/colors%20.dart';
 import 'login_page.dart';
 
 class GetStared extends StatelessWidget {
