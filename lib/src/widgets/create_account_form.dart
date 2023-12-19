@@ -59,7 +59,7 @@ class Create_Account_Form extends StatelessWidget {
                 fontSize: 16, 
                )
               ) ,
-              child: const Text('Sign In',style: TextStyle(color: Colors.white),))
+              child: const Text('Sign Up',style: TextStyle(color: Colors.white),))
           ],
         ));
   }
