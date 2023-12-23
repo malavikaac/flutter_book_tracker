@@ -77,7 +77,7 @@ class _LoginPageState extends State<LoginPage> {
           Expanded(
               flex: 2,
               child: Container(
-                color: Color.fromARGB(255, 230, 233, 250),
+                color: const Color.fromARGB(255, 230, 233, 250),
               )),
         ],
       ),

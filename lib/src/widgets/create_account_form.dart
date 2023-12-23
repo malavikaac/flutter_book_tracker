@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_book_tracker/src/utils/colors%20.dart';
 import 'input_decoration.dart';
 
 
@@ -62,7 +63,7 @@ class Create_Account_Form extends StatelessWidget {
                   fontSize: 16, 
                  )
                 ) ,
-                child: const Text('Sign Up',style: TextStyle(color: Colors.white),))
+                child:  Text('Sign Up',style: TextStyle(color:ColorsPalette.white),))
             ],
           ),
         ));
