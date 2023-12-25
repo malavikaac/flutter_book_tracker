@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -54,6 +53,29 @@
         }
       });
     });
+  </script>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBPpGyMuZ1pmohGwaygN0FTSQjWRln11Z4",
+      authDomain: "flutter-book-tracker-app-45303.firebaseapp.com",
+      projectId: "flutter-book-tracker-app-45303",
+      storageBucket: "flutter-book-tracker-app-45303.appspot.com",
+      messagingSenderId: "643172255654",
+      appId: "1:643172255654:web:3ac208e81d0af785fcb167",
+      measurementId: "G-D0J8N184CG"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
   </script>
 </body>
 </html>
