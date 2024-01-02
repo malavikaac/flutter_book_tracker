@@ -5,9 +5,12 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 100,
-      width: 100,
+    return const Padding(
+      padding: EdgeInsets.all(8.0),
+      child: SizedBox(
+        height: 100,
+        width: 100,
+      ),
     );
   }
 }
